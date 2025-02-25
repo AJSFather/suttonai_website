@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sutton A.I.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sutton A.I.</h1>
+    </header>
+
+    <main>
+        <div class="content">
+            <h2>A.I.-empowered solutions for smarter, more efficient productivity.</h2>
+            <p>We help businesses streamline operations, enhance customer experiences, and leverage AI-driven automation to improve efficiency. Let us assist you in integrating AI into your workflow seamlessly.</p>
+            <a href="mailto:adam@suttonai.com" class="contact-button">Contact Us</a>
+        </div>
+        <div class="image-container">
+            <img src="laptop_ai.PNG" alt="AI-powered laptop illustration">
+        </div>
+    </main>
+</body>
+</html>
