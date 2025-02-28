@@ -10,23 +10,23 @@ body {
 /* Header */
 header {
     background-color: #333;
-    padding: 15px 20px;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 /* Logo Styling */
 .logo {
-    height: 60px; /* Adjust logo size for readability */
+    height: 80px; /* Increased logo size */
+    margin-right: 20px; /* Adds spacing between logo and title */
 }
 
 /* Title */
 h1 {
     margin: 0;
-    font-size: 28px;
-    flex-grow: 1; /* Pushes the title to center */
-    text-align: center;
+    font-size: 32px;
+    color: white;
 }
 
 /* Main Content */
@@ -56,26 +56,4 @@ p {
 
 /* Contact Button */
 .contact-button {
-    display: inline-block;
-    background-color: #666;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin-top: 15px;
-    border-radius: 5px;
-}
-
-.contact-button:hover {
-    background-color: #888;
-}
-
-/* Image Section */
-.image-container {
-    flex: 1;
-    text-align: center;
-}
-
-.image-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px
+    displ
