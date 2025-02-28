@@ -10,24 +10,23 @@ body {
 /* Header */
 header {
     background-color: #333;
-    padding: 20px;
+    padding: 15px 20px;
     display: flex;
     align-items: center;
-    justify-content: center; /* Center title but keep logo on left */
-    position: relative; /* Allows positioning of logo */
+    justify-content: space-between;
 }
 
 /* Logo Styling */
 .logo {
-    position: absolute;
-    left: 20px; /* Adjust as needed */
-    max-height: 80px; /* Increased size for better readability */
+    height: 60px; /* Adjust logo size for readability */
 }
 
 /* Title */
 h1 {
     margin: 0;
     font-size: 28px;
+    flex-grow: 1; /* Pushes the title to center */
+    text-align: center;
 }
 
 /* Main Content */
@@ -79,5 +78,4 @@ p {
 .image-container img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
-}
+    border-radius: 10px
