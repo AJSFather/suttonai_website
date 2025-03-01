@@ -18,14 +18,15 @@ header {
 
 /* Logo Styling */
 .logo {
-    height: 80px; /* Increased logo size */
-    margin-right: 20px; /* Adds spacing between logo and title */
+    height: 80px; /* Scales properly on all devices */
+    max-width: 150px; /* Prevents the logo from being too large */
+    margin-right: 15px;
 }
 
 /* Title */
 h1 {
     margin: 0;
-    font-size: 32px;
+    font-size: 28px;
     color: white;
 }
 
@@ -56,4 +57,39 @@ p {
 
 /* Contact Button */
 .contact-button {
-    displ
+    display: inline-block;
+    background-color: #666;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.contact-button:hover {
+    background-color: #888;
+}
+
+/* Image Section */
+.image-container {
+    flex: 1;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack logo and title on smaller screens */
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        height: 100px; /* Slightly larger for better visibili
