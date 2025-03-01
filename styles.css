@@ -23,7 +23,7 @@ header {
 }
 
 .logo-container img {
-    width: 64px;  /* Increased logo size to approx. 1 inch */
+    width: 64px;  /* 1 inch logo */
     height: 64px;
     margin-right: 15px;
 }
@@ -50,13 +50,17 @@ main {
     max-width: 50%;
 }
 
-h2 {
-    font-size: 24px;
+/* Image Section */
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Pushes the image more to the right */
 }
 
-p {
-    font-size: 16px;
-    line-height: 1.5;
+.image-container img {
+    max-width: 296px;  /* Adjusted size */
+    height: auto;
+    border-radius: 10px;
 }
 
 /* Contact Button */
@@ -74,18 +78,6 @@ p {
     background-color: #888;
 }
 
-/* Image Section */
-.image-container {
-    flex: 1;
-    text-align: center;
-}
-
-.image-container img {
-    max-width: 296px;  /* Further decreased image size by 2 inches squared */
-    height: auto;
-    border-radius: 10px;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     main {
@@ -95,6 +87,10 @@ p {
 
     .content, .image-container {
         max-width: 100%;
+    }
+
+    .image-container {
+        justify-content: center; /* Centers image on mobile */
     }
 
     .logo-container {
