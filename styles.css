@@ -10,30 +10,33 @@ body {
 /* Header */
 header {
     background-color: #333;
-    padding: 15px 20px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
-/* Logo */
-.logo {
-    height: 96px; /* Increased size (1 in. x 1 in.) */
-    width: 96px; 
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 64px;  /* Increased logo size to approx. 1 inch */
+    height: 64px;
     margin-right: 15px;
 }
 
-/* Header Title */
-h1 {
-    margin: 0;
+.logo-container h1 {
     font-size: 28px;
-    font-family: cursive; /* Applied cursive font */
+    font-family: cursive;
+    margin: 0;
 }
 
 /* Main Content */
 main {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     max-width: 900px;
@@ -77,42 +80,24 @@ p {
     text-align: center;
 }
 
-/* Adjusted Image Size */
 .image-container img {
-    width: 512px; /* Reduced size */
-    height: 312px; /* Reduced size */
-    max-width: 100%; /* Ensures responsiveness */
+    max-width: 296px;  /* Further decreased image size by 2 inches squared */
+    height: auto;
     border-radius: 10px;
 }
 
-/* Mobile Compatibility */
+/* Responsive Design */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .logo {
-        height: 80px; /* Adjust logo size for mobile */
-        width: 80px;
-        margin-bottom: 10px;
-    }
-
-    h1 {
-        font-size: 24px; /* Slightly smaller font for mobile */
-    }
-
     main {
         flex-direction: column;
         text-align: center;
     }
 
-    .content {
+    .content, .image-container {
         max-width: 100%;
     }
 
-    .image-container img {
-        width: 100%; /* Adjust image for small screens */
-        height: auto;
+    .logo-container {
+        justify-content: center;
     }
 }
