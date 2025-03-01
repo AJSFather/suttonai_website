@@ -12,26 +12,25 @@ header {
     background-color: #333;
     padding: 20px;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: center; /* Aligns logo and header title horizontally */
+    justify-content: flex-start; /* Keeps content on the left */
 }
 
-/* Logo Container */
 .logo-container {
-    display: flex;
-    align-items: center;
+    margin-right: 20px;
 }
 
-.logo-container img {
-    width: 64px;  /* 1 inch logo */
-    height: 64px;
-    margin-right: 15px;
+.logo {
+    width: 50px; /* Adjust logo size */
+    height: 50px;
+    border-radius: 5px;
 }
 
-.logo-container h1 {
-    font-size: 28px;
-    font-family: cursive;
+h1 {
+    font-family: 'Roboto', sans-serif;  /* Professional font */
     margin: 0;
+    font-size: 28px;
+    color: white;
 }
 
 /* Main Content */
@@ -50,17 +49,13 @@ main {
     max-width: 50%;
 }
 
-/* Image Section */
-.image-container {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end; /* Pushes the image more to the right */
+h2 {
+    font-size: 24px;
 }
 
-.image-container img {
-    max-width: 296px;  /* Adjusted size */
-    height: auto;
-    border-radius: 10px;
+p {
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 /* Contact Button */
@@ -78,22 +73,14 @@ main {
     background-color: #888;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    main {
-        flex-direction: column;
-        text-align: center;
-    }
+/* Image Section */
+.image-container {
+    flex: 1;
+    text-align: right; /* Aligns image to the right */
+}
 
-    .content, .image-container {
-        max-width: 100%;
-    }
-
-    .image-container {
-        justify-content: center; /* Centers image on mobile */
-    }
-
-    .logo-container {
-        justify-content: center;
-    }
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
