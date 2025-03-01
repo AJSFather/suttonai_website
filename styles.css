@@ -10,29 +10,28 @@ body {
 /* Header */
 header {
     background-color: #333;
-    padding: 10px 20px;
+    padding: 15px 20px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
 }
 
-/* Logo Styling */
+/* Logo */
 .logo {
-    height: 80px; /* Scales properly on all devices */
-    max-width: 150px; /* Prevents the logo from being too large */
+    height: 80px;  /* Increased logo size */
+    width: auto;
     margin-right: 15px;
 }
 
-/* Title */
+/* Header Title */
 h1 {
     margin: 0;
     font-size: 28px;
-    color: white;
 }
 
 /* Main Content */
 main {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     max-width: 900px;
@@ -61,10 +60,9 @@ p {
     background-color: #666;
     color: white;
     text-decoration: none;
-    padding: 12px 24px;
+    padding: 10px 20px;
     margin-top: 15px;
     border-radius: 5px;
-    font-size: 18px;
 }
 
 .contact-button:hover {
@@ -77,19 +75,37 @@ p {
     text-align: center;
 }
 
+/* Adjusted Image Size */
 .image-container img {
-    max-width: 100%;
-    height: auto;
+    width: 512px;  /* Reduced size */
+    height: 312px; /* Reduced size */
+    max-width: 100%; /* Ensures responsiveness */
     border-radius: 10px;
 }
 
-/* Mobile Optimization */
+/* Mobile Compatibility */
 @media (max-width: 768px) {
     header {
-        flex-direction: column; /* Stack logo and title on smaller screens */
-        align-items: center;
+        flex-direction: column;
         text-align: center;
     }
 
     .logo {
-        height: 100px; /* Slightly larger for better visibili
+        height: 70px; /* Adjust logo size for mobile */
+        margin-bottom: 10px;
+    }
+
+    main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content {
+        max-width: 100%;
+    }
+
+    .image-container img {
+        width: 100%; /* Adjust image for small screens */
+        height: auto;
+    }
+}
