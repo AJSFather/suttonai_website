@@ -13,12 +13,13 @@ header {
     padding: 15px 20px;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 
 /* Logo */
 .logo {
-    height: 80px;  /* Increased logo size */
-    width: auto;
+    height: 96px; /* Increased size (1 in. x 1 in.) */
+    width: 96px; 
     margin-right: 15px;
 }
 
@@ -26,6 +27,7 @@ header {
 h1 {
     margin: 0;
     font-size: 28px;
+    font-family: cursive; /* Applied cursive font */
 }
 
 /* Main Content */
@@ -77,7 +79,7 @@ p {
 
 /* Adjusted Image Size */
 .image-container img {
-    width: 512px;  /* Reduced size */
+    width: 512px; /* Reduced size */
     height: 312px; /* Reduced size */
     max-width: 100%; /* Ensures responsiveness */
     border-radius: 10px;
@@ -91,8 +93,13 @@ p {
     }
 
     .logo {
-        height: 70px; /* Adjust logo size for mobile */
+        height: 80px; /* Adjust logo size for mobile */
+        width: 80px;
         margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 24px; /* Slightly smaller font for mobile */
     }
 
     main {
