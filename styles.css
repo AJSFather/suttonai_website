@@ -11,62 +11,20 @@ body {
 header {
     background-color: #333;
     padding: 20px;
-    text-align: center;
-}
-
-h1 {
-    margin: 0;
-    font-size: 28px;
-}
-
-/* Main Content */
-main {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 20px;
+    align-items: center; /* Aligns logo and header title horizontally */
+    justify-content: flex-start; /* Keeps content on the left */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-/* Text Content */
-.content {
-    flex: 1;
-    max-width: 50%;
+.logo-container {
+    margin-right: 20px;
 }
 
-h2 {
-    font-size: 24px;
-}
-
-p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-/* Contact Button */
-.contact-button {
-    display: inline-block;
-    background-color: #666;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin-top: 15px;
-    border-radius: 5px;
-}
-
-.contact-button:hover {
-    background-color: #888;
-}
-
-/* Image Section */
-.image-container {
-    flex: 1;
-    text-align: center;
-}
-
-.image-container img {
-    max-width: 100%;
+.logo {
+    width: 70px; /* Increased logo size */
     height: auto;
-    border-radius: 10px;
-}
+ 
