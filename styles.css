@@ -14,6 +14,10 @@ header {
     display: flex;
     align-items: center; /* Aligns logo and header title horizontally */
     justify-content: flex-start; /* Keeps content on the left */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo-container {
@@ -21,66 +25,6 @@ header {
 }
 
 .logo {
-    width: 50px; /* Adjust logo size */
-    height: 50px;
-    border-radius: 5px;
-}
-
-h1 {
-    font-family: 'Roboto', sans-serif;  /* Professional font */
-    margin: 0;
-    font-size: 28px;
-    color: white;
-}
-
-/* Main Content */
-main {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 20px;
-}
-
-/* Text Content */
-.content {
-    flex: 1;
-    max-width: 50%;
-}
-
-h2 {
-    font-size: 24px;
-}
-
-p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-/* Contact Button */
-.contact-button {
-    display: inline-block;
-    background-color: #666;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin-top: 15px;
-    border-radius: 5px;
-}
-
-.contact-button:hover {
-    background-color: #888;
-}
-
-/* Image Section */
-.image-container {
-    flex: 1;
-    text-align: right; /* Aligns image to the right */
-}
-
-.image-container img {
-    max-width: 100%;
+    width: 70px; /* Increased logo size */
     height: auto;
-    border-radius: 10px;
-}
+ 
