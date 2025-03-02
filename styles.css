@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Using Google Font Roboto */
     margin: 0;
     padding: 0;
     background-color: #1a1a1a;
@@ -25,6 +25,17 @@ header {
 }
 
 .logo {
-    width: 70px; /* Increased logo size */
+    width: 70px; /* Adjusted logo size */
     height: auto;
- 
+}
+
+/* Header Title */
+h1 {
+    font-size: 2rem; /* Adjust header title size */
+    margin: 0;
+}
+
+/* Main Content */
+main {
+    padding: 40px;
+    text-align: center; /* Center content */
