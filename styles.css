@@ -1,24 +1,23 @@
+/* Import Montserrat Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a;
-    color: white;
-    line-height: 1.6;
+    background-color: #f5f7fa; /* Light background for a clean, modern feel */
+    color: #1a1a1a; /* Dark gray text for contrast */
 }
 
 /* Header */
 header {
-    background-color: #333;
-    padding: 20px;
+    background-color: #ffffff;
+    padding: 20px 40px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+    border-bottom: 2px solid #e0e0e0;
 }
 
 .logo-container {
@@ -26,93 +25,80 @@ header {
 }
 
 .logo {
-    width: 70px;
-    height: auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
 }
 
 h1 {
-    font-size: 2rem;
-    color: white;
-    font-weight: bold;
+    font-size: 28px;
+    font-weight: 700;
     margin: 0;
+    color: #1a1a1a;
 }
 
 /* Main Content */
 main {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 40px;
-    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 20px;
 }
 
+/* Text Content */
 .content {
-    max-width: 600px;
-    text-align: left;
+    flex: 1;
+    max-width: 55%;
 }
 
 h2 {
-    font-size: 2.2rem;
-    font-weight: bold;
-    color: #ffcc00;
-    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #0077FF; /* Electric blue accent */
 }
 
 p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    color: #ccc;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
 }
 
 blockquote {
-    font-size: 1.3rem;
-    font-style: italic;
-    margin: 20px 0;
-    padding-left: 20px;
-    border-left: 4px solid #ffcc00;
-    color: #ffcc00;
+    font-size: 18px;
+    font-weight: 600;
+    color: #735CDD; /* Subtle purple accent */
+    margin: 10px 0;
 }
 
+/* Contact Button */
 .contact-button {
-    background-color: #ffcc00;
-    color: black;
-    padding: 10px 20px;
+    display: inline-block;
+    background-color: #1f2937; /* Dark modern button */
+    color: white;
     text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border-radius: 5px;
+    padding: 12px 24px;
     margin-top: 20px;
+    border-radius: 0; /* Sharp edges for modern look */
+    font-weight: 600;
+    transition: background 0.3s ease-in-out;
 }
 
 .contact-button:hover {
-    background-color: #e6b800;
+    background-color: #004080; /* Slight hover change */
 }
 
-/* Image Styling */
+/* Image Section */
 .image-container {
-    max-width: 600px;
+    flex: 1;
+    text-align: right;
+    padding-left: 40px; /* Adds more spacing between text and image */
 }
 
 .image-container img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
-}
-
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-    main {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .content {
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .image-container {
-        max-width: 100%;
-        margin-top: 30px;
-    }
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
 }
