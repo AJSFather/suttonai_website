@@ -1,18 +1,240 @@
 /* Define a common blue color */
 :root {
     --primary-blue: #2a7de1; /* Modern blue shade */
+    --light-gray: #f5f7fa; /* Light background color */
+    --dark-gray: #1a1a1a;  /* Dark text color */
+    --white: #ffffff; /* White for backgrounds */
 }
 
-/* Apply to headings */
-h1, h2, blockquote {
-    color: var(--primary-blue);
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Ensure blockquote styling is modern and clean */
+/* Body Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--white);
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.logo-container {
+    margin-right: 20px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--dark-gray);
+}
+
+/* Main Content */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+/* Text Content */
+.content {
+    flex: 1;
+    max-width: 55%;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--primary-blue); /* Blue accent */
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Blockquote Styling */
 blockquote {
     font-style: italic;
     font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-blue); /* Using primary blue color */
     border-left: 4px solid var(--primary-blue);
     padding-left: 15px;
     margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Contact Button */
+.contact-button {
+    display: inline-block;
+    background-color: #1f2937; /* Dark button color */
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s ease-in-out;
+}
+
+.contact-button:hover {
+    background-color: #004080; /* Slight hover change */
+}
+
+/* Image Section */
+.image-container {
+    flex: 1;
+    text-align: right;
+    padding-left: 40px; /* Adds more spacing between text and image */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+/* Define a common blue color */
+:root {
+    --primary-blue: #2a7de1; /* Modern blue shade */
+    --light-gray: #f5f7fa; /* Light background color */
+    --dark-gray: #1a1a1a;  /* Dark text color */
+    --white: #ffffff; /* White for backgrounds */
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--white);
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.logo-container {
+    margin-right: 20px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--dark-gray);
+}
+
+/* Main Content */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+/* Text Content */
+.content {
+    flex: 1;
+    max-width: 55%;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--primary-blue); /* Blue accent */
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Blockquote Styling */
+blockquote {
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-blue); /* Using primary blue color */
+    border-left: 4px solid var(--primary-blue);
+    padding-left: 15px;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Contact Button */
+.contact-button {
+    display: inline-block;
+    background-color: #1f2937; /* Dark button color */
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s ease-in-out;
+}
+
+.contact-button:hover {
+    background-color: #004080; /* Slight hover change */
+}
+
+/* Image Section */
+.image-container {
+    flex: 1;
+    text-align: right;
+    padding-left: 40px; /* Adds more spacing between text and image */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
 }
