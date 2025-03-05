@@ -21,13 +21,19 @@ header {
     background-color: #1E2A3A;
     color: white;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 30px; /* Reduced padding for smaller header */
+    padding: 10px 30px;
 }
 
 header img {
-    height: 50px; /* Adjust logo size */
+    height: 50px; /* Adjusted logo size */
+    margin-right: 15px; /* Space between logo and text */
+}
+
+header h1 {
+    font-size: 1.8rem; /* Adjusted size of the business name */
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 /* Main Section */
@@ -37,9 +43,9 @@ header img {
     align-items: center;
     padding: 20px 30px;
     margin-top: 50px;
-    margin-bottom: 0; /* Adjusted to avoid too much space below */
     flex: 1;
-    min-height: calc(100vh - 120px); /* Ensures that main content takes up available height */
+    min-height: calc(100vh - 120px);
+    gap: 20px; /* Added gap for spacing between text and image */
 }
 
 .main-content .text {
@@ -48,19 +54,18 @@ header img {
 }
 
 .main-content .text h1 {
-    font-size: 2rem; /* Slightly smaller font size */
+    font-size: 2rem;
     margin-bottom: 15px;
 }
 
 .main-content .text p {
-    font-size: 1rem; /* Adjusted for better readability */
-    margin-bottom: 15px;
+    font-size: 1rem;
+    margin-bottom: 20px; /* Adjusted spacing */
 }
 
 .main-content img {
-    max-width: 100%;
+    max-width: 60%; /* Reduced size of the image */
     height: auto;
-    flex: 1;
 }
 
 /* Contact Button */
@@ -74,6 +79,7 @@ header img {
     display: inline-block;
     font-size: 1.2rem;
     margin-top: 20px;
+    transition: background-color 0.3s;
 }
 
 .contact-btn:hover {
@@ -107,30 +113,4 @@ footer a {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact-form button {
-    background-color: #007bff;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1rem;
-}
-
-.contact-form button:hover {
-    background-color: #0056b3;
-}
+    background-color:
