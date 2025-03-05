@@ -3,34 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Sutton A.I. for AI-driven business solutions and consulting.">
-    <title>Contact Sutton A.I.</title>
+    <title>Contact Us - Sutton A.I.</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header Section -->
-    <header>
-        <div class="container header-content">
+    <header class="header">
+        <div class="logo-container">
             <img src="logo_sanstext.png" alt="Sutton A.I. Logo" class="logo">
             <h1>Sutton A.I.</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
     <!-- Contact Form Section -->
-    <section id="contact" class="contact-form">
-        <div class="container">
+    <section class="contact-form-section">
+        <div class="contact-form-container">
             <h2>Contact Us</h2>
-            <p>We'd love to hear from you! Please fill out the form below to schedule a consultation or ask any questions.</p>
-            <form action="mailto:info@suttonai.com" method="POST" enctype="multipart/form-data">
+            <form action="mailto:info@suttonai.com" method="post" enctype="text/plain" class="contact-form">
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -38,42 +27,40 @@
                 <input type="email" id="email" name="email" required>
 
                 <label for="phone">Phone Number:</label>
-                <input type="text" id="phone" name="phone" required>
+                <input type="tel" id="phone" name="phone">
 
-                <label for="contact-method">Best Contact Method:</label>
-                <select id="contact-method" name="contact-method">
-                    <option value="email">Email</option>
-                    <option value="phone">Phone</option>
+                <label for="contact-method">Preferred Contact Method:</label>
+                <select id="contact-method" name="contact-method" required>
+                    <option value="Email">Email</option>
+                    <option value="Phone">Phone</option>
                 </select>
 
-                <label for="contact-time">Best Time to Contact:</label>
-                <input type="text" id="contact-time" name="contact-time">
+                <label for="time">Best Time to Contact:</label>
+                <input type="text" id="time" name="time" required>
 
-                <!-- Additional Questions -->
-                <label for="q1">What is your main business goal for the next 12 months?</label>
-                <textarea id="q1" name="q1"></textarea>
+                <label for="business-needs">What are your top business needs? (Please provide details)</label>
+                <textarea id="business-needs" name="business-needs" rows="4" required></textarea>
 
-                <label for="q2">What challenges are you currently facing in your business operations?</label>
-                <textarea id="q2" name="q2"></textarea>
+                <label for="AI-experience">What is your experience with AI, if any?</label>
+                <textarea id="AI-experience" name="AI-experience" rows="4"></textarea>
 
-                <label for="q3">What areas of your business are you considering for AI integration?</label>
-                <textarea id="q3" name="q3"></textarea>
+                <label for="goals">What are your primary goals for using AI in your business?</label>
+                <textarea id="goals" name="goals" rows="4" required></textarea>
 
-                <label for="q4">How do you currently track and measure business performance?</label>
-                <textarea id="q4" name="q4"></textarea>
+                <label for="challenges">What challenges are you currently facing that you think AI could help with?</label>
+                <textarea id="challenges" name="challenges" rows="4" required></textarea>
 
-                <label for="q5">What would a successful partnership with Sutton A.I. look like to you?</label>
-                <textarea id="q5" name="q5"></textarea>
+                <label for="budget">Do you have a specific budget in mind for AI implementation?</label>
+                <input type="text" id="budget" name="budget" required>
 
                 <button type="submit">Send Message</button>
             </form>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Sutton A.I. – All Rights Reserved</p>
-        </div>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2025 Sutton A.I. | All rights reserved.</p>
     </footer>
 </body>
 </html>
