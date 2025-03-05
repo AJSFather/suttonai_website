@@ -7,19 +7,16 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #1e1e1e;
+    color: #d1d1d1;
+    line-height: 1.6;
 }
 
-header, footer {
+/* Header */
+header {
     background-color: #2c3e50;
     color: #fff;
     padding: 20px 0;
-}
-
-header h1 {
-    font-size: 36px;
-    margin-left: 20px;
 }
 
 header .header-content {
@@ -33,6 +30,11 @@ header .header-content {
 
 header .logo {
     max-width: 120px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-left: 20px;
 }
 
 header nav ul {
@@ -50,28 +52,32 @@ header nav ul li a {
     font-size: 18px;
 }
 
-main {
-    padding: 40px 20px;
+/* Main Section - Side by Side Layout */
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 40px auto;
+    padding: 20px;
 }
 
-.intro {
-    text-align: center;
-    margin-bottom: 40px;
+.text-section {
+    flex: 1;
+    padding-right: 40px;
 }
 
-.intro h2 {
+.text-section h2 {
     font-size: 36px;
     margin-bottom: 20px;
 }
 
-.intro p {
+.text-section p {
     font-size: 18px;
     margin-bottom: 20px;
 }
 
-.intro blockquote {
+.text-section blockquote {
     font-size: 20px;
     font-style: italic;
     margin: 20px 0;
@@ -92,19 +98,46 @@ main {
     background-color: #005f6a;
 }
 
+/* Image Section */
 .image-section {
-    text-align: center;
-    margin-top: 40px;
+    flex: 1;
+    text-align: right;
 }
 
-.main-image {
-    max-width: 80%;
+.image-section img {
+    max-width: 90%;
     height: auto;
+    border-radius: 10px;
 }
 
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-section {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .image-section {
+        text-align: center;
+    }
+
+    .image-section img {
+        max-width: 100%;
+    }
+}
+
+/* Footer */
 footer {
+    background-color: #2c3e50;
+    color: white;
     text-align: center;
-    font-size: 16px;
+    padding: 20px;
+    margin-top: 40px;
 }
 
 footer .footer-contact-link {
@@ -115,42 +148,4 @@ footer .footer-contact-link {
 
 footer .footer-contact-link:hover {
     text-decoration: underline;
-}
-
-/* Contact Form Styling */
-.contact-form-section {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.contact-form-section form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact-form-section label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-}
-
-.contact-form-section input,
-.contact-form-section textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.contact-form-section input[type="submit"] {
-    background-color: #008CBA;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-.contact-form-section input[type="submit"]:hover {
-    background-color: #005f6a;
 }
