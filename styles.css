@@ -99,12 +99,13 @@ blockquote {
 /* Image section */
 .image-section {
     margin-top: 40px;
+    text-align: center; /* Center the image within its section */
 }
 
 .main-image {
-    max-width: 100%;
+    max-width: 80%; /* Adjust the size as needed */
     height: auto;
-    display: block;
+    display: inline-block; /* Ensures it's treated as inline for centering */
     margin: 0 auto;
 }
 
