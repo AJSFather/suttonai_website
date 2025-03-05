@@ -12,12 +12,6 @@ body {
     color: #333;
 }
 
-/* Container */
-.container {
-    width: 85%;
-    margin: 0 auto;
-}
-
 /* Header */
 header {
     background-color: #00274D;
@@ -28,14 +22,23 @@ header {
     z-index: 1000;
 }
 
-header h1 {
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+h1 {
     font-size: 2.5rem;
-    text-align: center;
 }
 
 nav ul {
     display: flex;
-    justify-content: center;
     list-style-type: none;
 }
 
@@ -55,7 +58,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background: url('hero-background.jpg') no-repeat center center/cover;
+    background: url('laptop_ai.png') no-repeat center center/cover;
     color: #fff;
     padding: 100px 0;
     text-align: center;
@@ -90,41 +93,27 @@ nav ul li a:hover {
     background-color: #45a049;
 }
 
-/* About Section */
-.about {
+/* Contact Form Section */
+.contact-form {
     background-color: #fff;
     padding: 50px 0;
 }
 
-.about h2 {
+.contact-form h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-/* Services Section */
-.services {
-    background-color: #f4f4f4;
-    padding: 50px 0;
-}
-
-.services .service-items {
-    display: flex;
-    flex-wrap: wrap;
+.contact-form form {
+    display: grid;
     gap: 20px;
-    justify-content: space-between;
 }
 
-.services .service-item {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    width: 23%;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+.contact-form label {
+    font-size: 1.1rem;
 }
 
-.services .service-item h3 {
-    margin-bottom: 15px;
-}
-
-.services .service-item p {
-    font
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    padding: 10
