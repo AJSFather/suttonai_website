@@ -116,4 +116,29 @@ nav ul li a:hover {
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
-    padding: 10
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact-form button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #00274D;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
