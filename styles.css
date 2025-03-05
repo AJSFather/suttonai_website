@@ -11,6 +11,9 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header Style */
@@ -20,7 +23,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px; /* Decreased padding to reduce height */
+    padding: 10px 30px; /* Reduced padding for smaller header */
 }
 
 header img {
@@ -33,7 +36,10 @@ header img {
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px;
-    margin-top: 30px;
+    margin-top: 50px;
+    margin-bottom: 0; /* Adjusted to avoid too much space below */
+    flex: 1;
+    min-height: calc(100vh - 120px); /* Ensures that main content takes up available height */
 }
 
 .main-content .text {
@@ -42,7 +48,7 @@ header img {
 }
 
 .main-content .text h1 {
-    font-size: 2.5rem; /* Slightly smaller font size */
+    font-size: 2rem; /* Slightly smaller font size */
     margin-bottom: 15px;
 }
 
@@ -80,6 +86,7 @@ footer {
     color: white;
     padding: 10px 30px;
     text-align: center;
+    font-size: 0.9rem;
 }
 
 footer a {
