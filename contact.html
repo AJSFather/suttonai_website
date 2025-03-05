@@ -3,64 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Us - Sutton A.I.</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="header">
-        <div class="logo-container">
-            <img src="logo_sanstext.png" alt="Sutton A.I. Logo" class="logo">
-            <h1>Sutton A.I.</h1>
-        </div>
-    </header>
 
-    <!-- Contact Form Section -->
+<header>
+    <div class="header-content">
+        <img src="logo_sanstext.png" alt="Sutton A.I. Logo" class="logo">
+        <h1>Sutton A.I.</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="contact-link">Home</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
     <section class="contact-form-section">
-        <div class="contact-form-container">
-            <h2>Contact Us</h2>
-            <form action="mailto:info@suttonai.com" method="post" enctype="text/plain" class="contact-form">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
+        <h2>Contact Us</h2>
+        <form action="mailto:info@suttonai.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
 
-                <label for="contact-method">Preferred Contact Method:</label>
-                <select id="contact-method" name="contact-method" required>
-                    <option value="Email">Email</option>
-                    <option value="Phone">Phone</option>
-                </select>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-                <label for="time">Best Time to Contact:</label>
-                <input type="text" id="time" name="time" required>
+            <label for="contact-time">Best Time to Contact:</label>
+            <input type="text" id="contact-time" name="contact-time">
 
-                <label for="business-needs">What are your top business needs? (Please provide details)</label>
-                <textarea id="business-needs" name="business-needs" rows="4" required></textarea>
-
-                <label for="AI-experience">What is your experience with AI, if any?</label>
-                <textarea id="AI-experience" name="AI-experience" rows="4"></textarea>
-
-                <label for="goals">What are your primary goals for using AI in your business?</label>
-                <textarea id="goals" name="goals" rows="4" required></textarea>
-
-                <label for="challenges">What challenges are you currently facing that you think AI could help with?</label>
-                <textarea id="challenges" name="challenges" rows="4" required></textarea>
-
-                <label for="budget">Do you have a specific budget in mind for AI implementation?</label>
-                <input type="text" id="budget" name="budget" required>
-
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
+            <input type="submit" value="Send Message">
+        </form>
     </section>
+</main>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-        <p>&copy; 2025 Sutton A.I. | All rights reserved.</p>
-    </footer>
+<footer>
+    <p>&copy; 2025 Sutton A.I. All rights reserved.</p>
+    <a href="contact.html" class="footer-contact-link">Contact Us</a>
+</footer>
+
 </body>
 </html>
