@@ -1,142 +1,117 @@
-/* Reset some default browser styles */
-* {
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Set a background color and a font for the page */
-body {
-    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
-/* Header Style */
+/* Header Section */
 header {
-    background-color: #1E2A3A;
-    color: white;
     display: flex;
+    justify-content: space-between; /* Space between logo and contact link */
     align-items: center;
-    padding: 10px 30px;
+    padding: 20px 40px;
+    background-color: #1A1A1A; /* Dark background for header */
+    color: #fff;
 }
 
-header img {
-    height: 50px; /* Adjusted logo size */
-    margin-right: 15px; /* Space between logo and text */
-}
-
-header h1 {
-    font-size: 1.8rem; /* Adjusted size of the business name */
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-/* Main Section */
-.main-content {
+.header-content {
     display: flex;
     justify-content: space-between;
+    width: 100%;
     align-items: center;
-    padding: 20px 30px;
-    margin-top: 50px;
-    flex: 1;
-    min-height: calc(100vh - 120px);
-    gap: 20px; /* Added gap for spacing between text and image */
 }
 
-.main-content .text {
-    flex: 1;
-    max-width: 50%;
+.logo {
+    height: 40px;  /* Adjust the size of your logo */
 }
 
-.main-content .text h1 {
-    font-size: 2rem;
-    margin-bottom: 15px;
+h1 {
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.main-content .text p {
-    font-size: 1rem;
-    margin-bottom: 20px; /* Adjusted spacing */
+/* Navigation styling */
+nav ul {
+    list-style-type: none; /* Removes bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Align items horizontally */
 }
 
-.main-content img {
-    max-width: 60%; /* Reduced size of the image */
-    height: auto;
+nav ul li {
+    margin-left: 20px; /* Space between list items */
 }
 
-/* Contact Button */
-.contact-btn {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    border-radius: 5px;
+nav ul li a {
     text-decoration: none;
-    display: inline-block;
-    font-size: 1.2rem;
-    margin-top: 20px;
-    transition: background-color 0.3s;
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+    transition: color 0.3s ease-in-out;
 }
 
-.contact-btn:hover {
-    background-color: #0056b3;
+nav ul li a:hover {
+    color: #A8DADC;  /* Change color on hover */
 }
 
-/* Footer */
-footer {
-    background-color: #1E2A3A;
-    color: white;
-    padding: 10px 30px;
+/* Main Content Section */
+.main-content {
+    padding: 50px 20px;
     text-align: center;
-    font-size: 0.9rem;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Additional adjustments for spacing and layout */
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Contact form page styles */
-.contact-form {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
 
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 22px;
+    color: #444;
+    margin: 30px 0;
+}
+
+/* Contact button styling */
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1A1A1A;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.contact-button:hover {
+    background-color: #A8DADC;
+}
+
+/* Footer Section */
+footer {
+    background-color: #1A1A1A;
+    color: #fff;
+    text-align: center;
     padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact-form button {
-    background-color: #007bff;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1rem;
-}
-
-.contact-form button:hover {
-    background-color: #0056b3;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
