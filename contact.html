@@ -80,8 +80,6 @@
                     <label><input type="checkbox" name="tasks[]" value="Scheduling"> Scheduling & calendar management</label>
                     <label><input type="checkbox" name="tasks[]" value="Social media"> Social media posting</label>
                     <label><input type="checkbox" name="tasks[]" value="Lead generation"> Lead generation & follow-up</label>
-                    <label><input type="checkbox" name="tasks[]" value="Other"> Other (please specify):</label>
-                    <input type="text" name="tasks_other">
                 </div>
             </div>
 
@@ -119,13 +117,8 @@
             </div>
 
             <div class="form-group">
-                <label for="contact-time">Best time to contact you:</label>
-                <select name="contact-time" id="contact-time">
-                    <option value="Morning">Morning</option>
-                    <option value="Afternoon">Afternoon</option>
-                    <option value="Evening">Evening</option>
-                    <option value="Anytime">Anytime</option>
-                </select>
+                <label for="contact-time">Best time and way to contact you:</label>
+                <textarea id="contact-time" name="contact-time" rows="3" required></textarea>
             </div>
 
             <div class="form-group">
