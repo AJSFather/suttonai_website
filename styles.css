@@ -112,6 +112,20 @@ header nav ul li a {
 
 /* Responsive Design for Mobile */
 @media screen and (max-width: 768px) {
+    header .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        margin: 10px 0;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
     .main-content {
         flex-direction: column;
         text-align: center;
@@ -148,4 +162,17 @@ footer .footer-contact-link {
 
 footer .footer-contact-link:hover {
     text-decoration: underline;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
 }
