@@ -47,66 +47,90 @@
     <section class="contact-form-section">
         <h2>Contact Us</h2>
         <form action="mailto:info@suttonai.com" method="post" enctype="text/plain" onsubmit="return confirmSubmission()">
-            
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-            
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
-
-            <label for="challenges">What are the biggest challenges you face in your daily operations?</label>
-            <textarea id="challenges" name="challenges" rows="3" required></textarea>
-
-            <label for="outcomes">What outcomes would you like to achieve by integrating AI into your workflow?</label>
-            <textarea id="outcomes" name="outcomes" rows="3" required></textarea>
-            
-            <label>Are there any tasks in your business that feel repetitive or time-consuming?</label>
-            <div class="checkbox-group">
-                <input type="checkbox" name="tasks[]" value="Data entry"> Data entry<br>
-                <input type="checkbox" name="tasks[]" value="Customer service inquiries"> Customer service inquiries<br>
-                <input type="checkbox" name="tasks[]" value="Scheduling"> Scheduling & calendar management<br>
-                <input type="checkbox" name="tasks[]" value="Social media"> Social media posting<br>
-                <input type="checkbox" name="tasks[]" value="Lead generation"> Lead generation & follow-up<br>
-                <input type="checkbox" name="tasks[]" value="Other"> Other (please specify): <input type="text" name="tasks_other">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
             </div>
 
-            <label>Do you currently use any AI tools or automation in your business?</label>
-            <select name="current_ai" id="current_ai">
-                <option value="No">No</option>
-                <option value="Yes">Yes (please specify below)</option>
-            </select>
-            <input type="text" name="ai_tools" placeholder="Specify AI tools" class="conditional-input" style="display: none;">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            </div>
 
-            <label>Are you currently hiring for any administrative, customer service, or data-related roles?</label>
-            <select name="hiring" id="hiring">
-                <option value="No">No</option>
-                <option value="Yes">Yes (please specify below)</option>
-            </select>
-            <input type="text" name="hiring_roles" placeholder="Specify roles" class="conditional-input" style="display: none;">
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+            </div>
 
-            <label>How comfortable are you and your team with using AI-powered tools?</label>
-            <select name="comfort_level">
-                <option value="Very comfortable">Very comfortable</option>
-                <option value="Somewhat comfortable">Somewhat comfortable</option>
-                <option value="Need guidance">Need guidance</option>
-                <option value="Not comfortable at all">Not comfortable at all</option>
-            </select>
+            <div class="form-group">
+                <label for="challenges">What are the biggest challenges you face in your daily operations?</label>
+                <textarea id="challenges" name="challenges" rows="3" required></textarea>
+            </div>
 
-            <label>Would you be interested in AI training to help your team leverage automation more effectively?</label>
-            <input type="checkbox" name="ai_training" value="Yes"> Yes, I’d like more info!
-            
-            <label for="contact-time">Best time to contact you:</label>
-            <select name="contact-time" id="contact-time">
-                <option value="Morning">Morning</option>
-                <option value="Afternoon">Afternoon</option>
-                <option value="Evening">Evening</option>
-                <option value="Anytime">Anytime</option>
-            </select>
-            
-            <input type="submit" value="Send Message">
+            <div class="form-group">
+                <label for="outcomes">What outcomes would you like to achieve by integrating AI into your workflow?</label>
+                <textarea id="outcomes" name="outcomes" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Are there any tasks in your business that feel repetitive or time-consuming?</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="tasks[]" value="Data entry"> Data entry</label>
+                    <label><input type="checkbox" name="tasks[]" value="Customer service inquiries"> Customer service inquiries</label>
+                    <label><input type="checkbox" name="tasks[]" value="Scheduling"> Scheduling & calendar management</label>
+                    <label><input type="checkbox" name="tasks[]" value="Social media"> Social media posting</label>
+                    <label><input type="checkbox" name="tasks[]" value="Lead generation"> Lead generation & follow-up</label>
+                    <label><input type="checkbox" name="tasks[]" value="Other"> Other (please specify):</label>
+                    <input type="text" name="tasks_other">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Do you currently use any AI tools or automation in your business?</label>
+                <select name="current_ai" id="current_ai">
+                    <option value="No">No</option>
+                    <option value="Yes">Yes (please specify below)</option>
+                </select>
+                <input type="text" name="ai_tools" placeholder="Specify AI tools" class="conditional-input" style="display: none;">
+            </div>
+
+            <div class="form-group">
+                <label>Are you currently hiring for any administrative, customer service, or data-related roles?</label>
+                <select name="hiring" id="hiring">
+                    <option value="No">No</option>
+                    <option value="Yes">Yes (please specify below)</option>
+                </select>
+                <input type="text" name="hiring_roles" placeholder="Specify roles" class="conditional-input" style="display: none;">
+            </div>
+
+            <div class="form-group">
+                <label>How comfortable are you and your team with using AI-powered tools?</label>
+                <select name="comfort_level">
+                    <option value="Very comfortable">Very comfortable</option>
+                    <option value="Somewhat comfortable">Somewhat comfortable</option>
+                    <option value="Need guidance">Need guidance</option>
+                    <option value="Not comfortable at all">Not comfortable at all</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Would you be interested in AI training to help your team leverage automation more effectively?</label>
+                <label class="checkbox-label"><input type="checkbox" name="ai_training" value="Yes"> Yes, I’d like more info!</label>
+            </div>
+
+            <div class="form-group">
+                <label for="contact-time">Best time to contact you:</label>
+                <select name="contact-time" id="contact-time">
+                    <option value="Morning">Morning</option>
+                    <option value="Afternoon">Afternoon</option>
+                    <option value="Evening">Evening</option>
+                    <option value="Anytime">Anytime</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Send Message" class="submit-button">
+            </div>
         </form>
     </section>
 </main>
