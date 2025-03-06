@@ -15,7 +15,7 @@
         <h1>Sutton A.I.</h1>
         <nav>
             <ul>
-                <li><a href="index.html" class="contact-link">Home</a></li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
             </ul>
         </nav>
     </div>
@@ -25,21 +25,65 @@
     <section class="contact-form-section">
         <h2>Contact Us</h2>
         <form action="mailto:info@suttonai.com" method="post" enctype="text/plain">
+            
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
-
+            
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-
+            
             <label for="phone">Phone:</label>
             <input type="tel" id="phone" name="phone">
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <label for="challenges">What are the biggest challenges you face in your daily operations?</label>
+            <textarea id="challenges" name="challenges" rows="3" required></textarea>
 
-            <label for="contact-time">Best Time to Contact:</label>
-            <input type="text" id="contact-time" name="contact-time">
+            <label for="outcomes">What outcomes would you like to achieve by integrating AI into your workflow?</label>
+            <textarea id="outcomes" name="outcomes" rows="3" required></textarea>
+            
+            <label>Are there any tasks in your business that feel repetitive or time-consuming?</label>
+            <div class="checkbox-group">
+                <input type="checkbox" name="tasks[]" value="Data entry"> Data entry<br>
+                <input type="checkbox" name="tasks[]" value="Customer service inquiries"> Customer service inquiries<br>
+                <input type="checkbox" name="tasks[]" value="Scheduling"> Scheduling & calendar management<br>
+                <input type="checkbox" name="tasks[]" value="Social media"> Social media posting<br>
+                <input type="checkbox" name="tasks[]" value="Lead generation"> Lead generation & follow-up<br>
+                <input type="checkbox" name="tasks[]" value="Other"> Other (please specify): <input type="text" name="tasks_other">
+            </div>
 
+            <label>Do you currently use any AI tools or automation in your business?</label>
+            <select name="current_ai" id="current_ai">
+                <option value="No">No</option>
+                <option value="Yes">Yes (please specify below)</option>
+            </select>
+            <input type="text" name="ai_tools" placeholder="Specify AI tools" class="conditional-input">
+
+            <label>Are you currently hiring for any administrative, customer service, or data-related roles?</label>
+            <select name="hiring" id="hiring">
+                <option value="No">No</option>
+                <option value="Yes">Yes (please specify below)</option>
+            </select>
+            <input type="text" name="hiring_roles" placeholder="Specify roles" class="conditional-input">
+
+            <label>How comfortable are you and your team with using AI-powered tools?</label>
+            <select name="comfort_level">
+                <option value="Very comfortable">Very comfortable</option>
+                <option value="Somewhat comfortable">Somewhat comfortable</option>
+                <option value="Need guidance">Need guidance</option>
+                <option value="Not comfortable at all">Not comfortable at all</option>
+            </select>
+
+            <label>Would you be interested in AI training to help your team leverage automation more effectively?</label>
+            <input type="checkbox" name="ai_training" value="Yes"> Yes, I’d like more info!
+            
+            <label for="contact-time">Best time to contact you:</label>
+            <select name="contact-time" id="contact-time">
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+                <option value="Anytime">Anytime</option>
+            </select>
+            
             <input type="submit" value="Send Message">
         </form>
     </section>
