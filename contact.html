@@ -3,31 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Contact Sutton A.I. to learn how AI can transform your business operations.">
-    <meta name="keywords" content="AI, contact Sutton A.I., business automation, AI training">
-    <link rel="canonical" href="https://yourwebsite.com/contact.html">
-    <title>Contact Us - Sutton A.I.</title>
+    <title>Contact Sutton A.I.</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const aiToolsInput = document.querySelector('input[name="ai_tools"]');
-            const hiringRolesInput = document.querySelector('input[name="hiring_roles"]');
-
-            document.getElementById('current_ai').addEventListener('change', function() {
-                aiToolsInput.style.display = this.value === 'Yes' ? 'block' : 'none';
-            });
-
-            document.getElementById('hiring').addEventListener('change', function() {
-                hiringRolesInput.style.display = this.value === 'Yes' ? 'block' : 'none';
-            });
-        });
-
-        function confirmSubmission() {
-            alert('Thank you for contacting us! We will get back to you shortly.');
-            return true;
-        }
-    </script>
 </head>
 <body>
 
@@ -38,6 +15,8 @@
         <nav>
             <ul>
                 <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -46,96 +25,5 @@
 <main>
     <section class="contact-form-section">
         <h2>Contact Us</h2>
-        <form action="mailto:info@suttonai.com" method="post" enctype="text/plain" onsubmit="return confirmSubmission()">
+        <form id="contactForm">
             <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-            </div>
-
-            <div class="form-group">
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
-            </div>
-
-            <div class="form-group">
-                <label for="challenges">What are the biggest challenges you face in your daily operations?</label>
-                <textarea id="challenges" name="challenges" rows="3" required></textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="outcomes">What outcomes would you like to achieve by integrating AI into your workflow?</label>
-                <textarea id="outcomes" name="outcomes" rows="3" required></textarea>
-            </div>
-
-            <div class="form-group">
-                <label>Are there any tasks in your business that feel repetitive or time-consuming?</label>
-                <div class="checkbox-group">
-                    <label><input type="checkbox" name="tasks[]" value="Data entry"> Data entry</label>
-                    <label><input type="checkbox" name="tasks[]" value="Customer service inquiries"> Customer service inquiries</label>
-                    <label><input type="checkbox" name="tasks[]" value="Scheduling"> Scheduling & calendar management</label>
-                    <label><input type="checkbox" name="tasks[]" value="Social media"> Social media posting</label>
-                    <label><input type="checkbox" name="tasks[]" value="Lead generation"> Lead generation & follow-up</label>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label>Do you currently use any AI tools or automation in your business?</label>
-                <select name="current_ai" id="current_ai">
-                    <option value="No">No</option>
-                    <option value="Yes">Yes (please specify below)</option>
-                </select>
-                <input type="text" name="ai_tools" placeholder="Specify AI tools" class="conditional-input" style="display: none;">
-            </div>
-
-            <div class="form-group">
-                <label>Are you currently hiring for any administrative, customer service, or data-related roles?</label>
-                <select name="hiring" id="hiring">
-                    <option value="No">No</option>
-                    <option value="Yes">Yes (please specify below)</option>
-                </select>
-                <input type="text" name="hiring_roles" placeholder="Specify roles" class="conditional-input" style="display: none;">
-            </div>
-
-            <div class="form-group">
-                <label>How comfortable are you and your team with using AI-powered tools?</label>
-                <select name="comfort_level">
-                    <option value="Very comfortable">Very comfortable</option>
-                    <option value="Somewhat comfortable">Somewhat comfortable</option>
-                    <option value="Need guidance">Need guidance</option>
-                    <option value="Not comfortable at all">Not comfortable at all</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label>Would you be interested in AI training to help your team leverage automation more effectively?</label>
-                <label class="checkbox-label"><input type="checkbox" name="ai_training" value="Yes"> Yes, I’d like more info!</label>
-            </div>
-
-            <div class="form-group">
-                <label for="contact-time">Best time and way to contact you:</label>
-                <textarea id="contact-time" name="contact-time" rows="3" required></textarea>
-            </div>
-
-            <div class="form-group">
-                <input type="submit" value="Send Message" class="submit-button">
-            </div>
-        </form>
-    </section>
-</main>
-
-<footer>
-    <p>&copy; 2025 Sutton A.I. All rights reserved.</p>
-    <a href="contact.html" class="footer-contact-link">Contact Us</a>
-    <div class="social-media">
-        <a href="https://twitter.com/suttonai" target="_blank" aria-label="Twitter"><img src="twitter-icon.png" alt="Twitter" loading="lazy"></a>
-        <a href="https://linkedin.com/company/suttonai" target="_blank" aria-label="LinkedIn"><img src="linkedin-icon.png" alt="LinkedIn" loading="lazy"></a>
-    </div>
-</footer>
-
-</body>
-</html>
