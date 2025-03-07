@@ -302,10 +302,11 @@ footer .footer-contact-link:hover {
 
 .service-boxes {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; /* Allows boxes to wrap to the next line on smaller screens */
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 30px;
 }
 
 .service-box {
-    width:
+    flex: 1;
+    margin-bottom: 30px;
