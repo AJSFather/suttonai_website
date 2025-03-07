@@ -292,3 +292,20 @@ footer .footer-contact-link:hover {
     width: 24px;
     height: 24px;
 }
+
+/* Services Page Styling */
+.services-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.service-boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows boxes to wrap to the next line on smaller screens */
+    margin-top: 30px;
+}
+
+.service-box {
+    width:
