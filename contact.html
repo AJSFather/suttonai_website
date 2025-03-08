@@ -43,8 +43,27 @@
                 <input type="text" id="company" name="company">
             </div>
             <div class="form-group">
+                <label for="service">Interested In</label>
+                <select id="service" name="service">
+                    <option value="">Select a Service</option>
+                    <option value="ai-workshop">AI-Powered Workshops</option>
+                    <option value="ai-implementation">AI Application Implementation</option>
+                    <option value="ai-strategy">AI Strategy & Optimization</option>
+                </select>
+            </div>
+            <div class="form-group">
                 <label for="message">Message</label>
                 <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" name="newsletter" value="yes">
+                    Subscribe to our newsletter
+                </label>
+                <label>
+                    <input type="checkbox" name="consultation" value="yes">
+                    Request a free consultation
+                </label>
             </div>
             <button type="submit" class="submit-button">Send Message</button>
         </form>
